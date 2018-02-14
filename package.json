@@ -1,0 +1,33 @@
+{
+  "name": "savnac-custom-select",
+  "version": "1.0.0",
+  "description": "savnac custom-select functionality",
+  "main": "build/savnac-custom-select.js",
+  "scripts": {
+    "build": "rm -rf build bundle.js && mkdir build && rollup -c && rollup -f umd -o build/savnac-custom-select.js -- bundle.js && rm bundle.js && uglifyjs build/savnac-custom-select.js -c -m -o build/savnac-custom-select.min.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ventinus/savnac-custom-select.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ventinus/savnac-custom-select/issues"
+  },
+  "homepage": "https://github.com/ventinus/savnac-custom-select#readme",
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "savnac-utils": "^1.1.25"
+  },
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "rollup": "0.41",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "uglify-js": "^2.8.11"
+  }
+}
