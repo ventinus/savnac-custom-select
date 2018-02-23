@@ -11,5 +11,10 @@
     "syntax-object-rest-spread",
     "transform-object-rest-spread",
     "external-helpers"
-  ]
+  ],
+  "env": {
+  "test": {
+      "presets": [["env"]]
+    }
+  }
 }
