@@ -402,7 +402,8 @@ var customSelect = function customSelect() {
   }
 
   var clear = function clear() {
-    return setSelectedIndex(-1);
+    if (!props.isEnabled) return;
+    setSelectedIndex(-1);
   };
 
   var removeGeneratedMarkup = function removeGeneratedMarkup() {

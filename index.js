@@ -302,7 +302,10 @@ const customSelect = (opts = {}) => {
     setSelectEnabled()
   }
 
-  const clear = () => setSelectedIndex(-1)
+  const clear = () => {
+    if (!props.isEnabled) return
+    setSelectedIndex(-1)
+  }
 
   const removeGeneratedMarkup = () => {
     const wrapper = els.btn.parentNode

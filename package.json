@@ -1,6 +1,6 @@
 {
   "name": "savnac-custom-select",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "savnac custom-select functionality",
   "main": "build/savnac-custom-select.js",
   "scripts": {
